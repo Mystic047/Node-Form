@@ -50,17 +50,17 @@ app.post('/send', (req, res) => {
       rejectUnauthorized:false //ให้เราไม่โดน reject เนื่องจากเราส่งจาก localhost 
     }
 });
-  // setup email data with unicode symbols
+  // ตั้งค่า email 
   let mailOptions = {
-      from: '"Nodemailer Contact" <hungabeebee1@email.com>', // sender address
-      to: req.body.email, // list of receivers
-      subject: 'Node Contact Request', // Subject line
-      text: 'Hello world?', // plain text body
-      html: output // html body
+      from: '"Nodemailer Contact" <hungabeebee1@email.com>', //  หัวข้อ และ Email ผู้ส่ง
+      to: req.body.email, // เป็นตัวที่ request จากตัว html หน้าหรอก Email ที่ให้ส่งไปตาม Email ที่กรอกลงไป
+      subject: 'Node Contact Request', // หัวเรื่อง
+      text: 'Hello world?', // ส่วนข้อความ
+      html: output // ส่วนของ html 
   };
 
 
-  // send mail with defined transport object
+
   transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
           return console.log(error);
