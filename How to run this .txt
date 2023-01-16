@@ -1,0 +1,10 @@
+1. นำคำสั่งไปรันบน Terminal :  docker build -t my-node-app .
+2. ขั้นตอนสอง   : docker run -p 3000:3000 my-node-app
+
+
+อื่นๆถ้าอยากลงตั้งแต่แรก
+
+1: npm init เพิ่ม package.jon   กด Enter จนถึง Entrypoint ให้พิมพ์เป็น app.js
+2: npm install --save express body-parser express-handlebar nodemailer
+2: npm install -g nodemon  ลง nodemon เพื่อให้ทำการดูแลการรันเซิฟเวอร์เมื่อกดเซฟโค้ตแล้วกด refresh หน้าเว็ปจะเปลี่ยนตามโค้ตที่แก้ไขทันที
+

@@ -1,0 +1,11 @@
+Then, you can build the image by running the command 
+"docker build -t my-node-app ." in the terminal or command prompt, 
+in the same directory where you have your Dockerfile and your code.
+
+Once the image has been built, you can start a new container 
+from the image with the command "docker run -p 3000:3000 my-node-app". 
+This will start a new container and map port 3000 on the host to port 3000 in the container, 
+allowing you to access the application by navigating to "http://localhost:3000" in your web browser.
+
+
+
