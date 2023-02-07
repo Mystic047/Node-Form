@@ -66,14 +66,13 @@ app.post('/send',upload.single('file'), (req, res,next) => {
     <ul>  
       <li>Name: ${req.body.name}</li>
       <li>University: ${req.body.university}</li>
-      <li>Email: ${req.body.email}</li>
+   
       <li>Phone: ${req.body.phone}</li>
     </ul>
     <h3>เนื้อหา</h3>
     <p>${req.body.message}</p>
-
-
   `;
+    //<li>Email: ${req.body.email}</li>
     //<h4>รูปภาพ</h4>
     //<p>${req.body.attachment}</p>
 
